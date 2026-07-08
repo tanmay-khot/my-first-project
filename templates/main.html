@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang='en'>
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Studybud</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/main.css' %}">
 </head>
 <body>
     
@@ -12,8 +15,8 @@
     {% if messages %}
     <ul class="messages">
         {% for message in messages %}
-        <li></li>{{ message }}</li>
-            {% endfor %}
+        <li>{{ message }}</li>
+        {% endfor %}
     </ul>
     {% endif %}
 
